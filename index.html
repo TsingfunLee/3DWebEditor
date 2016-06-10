@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>3D编辑器</title>
+	</head>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<body>
+		<div class="edit">
+			<ul class="add">
+				<li class="addItem">
+					添加
+				</li>
+				<li class="addItem" id="cube">
+					立方体
+				</li>
+				<li class="addItem" id="sphere">
+					球体
+				</li>
+				<li class="addItem" id="cylinder">
+					圆柱体
+				</li>
+			</ul>
+
+			<ul class="transform">
+				<li>
+					<input type="radio" id="translate" name="transform" value="translate">移动
+				</li>
+				<li>
+					<input type="radio" id="rotate" name="transform" value="rotate">旋转
+				</li>
+				<li>
+					<input type="radio" id="scale" name="transform" value="scale">缩放
+				</li>
+			</ul>
+		</div>
+		<div id="canvas"></div>
+		<script src="lib/three.js"></script>
+		<script src="lib/OrbitControls.js"></script>
+		<script src="lib/TransformControls.js"></script>
+		<script src="js/scene.js"></script>
+		<script src="js/add.js"></script>
+		<script src="js/transform.js"></script>
+	</body>
+
+</html>

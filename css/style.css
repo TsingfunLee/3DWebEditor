@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	font: "微软雅黑";
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* add*/
+
+.edit {
+	position: absolute;
+	width: 150px;
+	height: 100%;
+	background-color: #DCDCDC;
+}
+
+.add {
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	margin-top: 50px;
+	text-align: center;
+	line-height: 50px;
+	overflow: hidden;
+}
+
+.add:hover {
+	width: 600px;
+	background-color: darkgray;
+	animation: drop 1s;
+}
+
+.addItem {
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+.addItem:hover {
+	background-color: gray;
+}
+
+@keyframes drop {
+	from {
+		width: 150px;
+	}
+	to {
+		width: 600px;
+	}
+}
+
+
+/* transform*/
+
+.transform {
+	width: 150px;
+	margin-top: 150px;
+	text-align: center;
+}
+.transform li{
+	margin-top: 20px;
+}
+
+/* canvas*/
+#canvas{
+	padding-left: 150px;
+}
